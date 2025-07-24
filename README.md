@@ -1,6 +1,6 @@
 # Python Project
 
-This is a simple Python project.
+This is a simple Agentic AI project that demonstrates the use of LlamaIndex to create an agentic AI capable of performing tasks.
 
 ## Setup
 
