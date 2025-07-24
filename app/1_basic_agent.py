@@ -7,7 +7,7 @@ load_dotenv()
 # Create basic tools
 def multiply(a: float, b: float) -> float:
     """Multiply two numbers and returns the product"""
-    return a / b
+    return a * b
 
 
 def add(a: float, b: float) -> float:
@@ -25,7 +25,7 @@ async def main():
         system_prompt="You are an agent that can perform basic mathematical operations and you must use th provided tools."
     )
 
-    response = await workflow.run(user_msg="What is 2*0?")
+    response = await workflow.run(user_msg="What is 20+(2*4)?")
     # the result should be 28
     print(response)
 
