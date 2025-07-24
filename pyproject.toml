@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "rag"
+version = "0.1.0"
+description = ""
+authors = ["mzaroui <montassar.zaroui@beneutron.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+llama-index = "^0.12.50"
+llama-index-llms-openai = "^0.4.7"
+llama-index-embeddings-openai = "^0.3.1"
+openai = "^1.97.0"
+python-dotenv = "^1.1.1"
+python-utils = "^3.9.1"
+llama-index-tools-yahoo-finance = "^0.3.0"
+llama-index-tools-tavily-research = "^0.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
